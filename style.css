@@ -1,0 +1,268 @@
+*{
+    padding: 0;
+    margin: 0;                                     
+}
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Merriweather;
+}
+
+
+h1 {
+    font-size: 5.61rem;
+}
+
+h2 {
+    font-size: 4.209rem;
+}
+
+h3 {
+    font-size: 3.157rem;
+}
+
+h4 {
+    font-size: 2.369rem;
+}
+
+h5 {
+    font-size: 1.777rem;
+}
+
+h6 {
+    font-size: 1.333rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+img {
+    object-fit: cover;
+}
+
+/*Sticky header at top with the nav bar */
+nav {
+    position: sticky;
+    top: 0px;
+    padding-top: 1px;
+    opacity: 1;
+    
+    width: 100%;
+    height: 10rem;
+    background-color: brown;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.2s;
+
+}
+
+nav a:hover {
+    color: black;
+    transition: color 0.2s;
+}
+
+.link {
+    /* width: 8rem;
+    height: 5rem;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+
+    color: white;
+    padding: 20px;
+}
+
+/* Contains everything except for the nav-bar header */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+    height: 100%;
+}
+
+
+#Home {
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/indianhead.jpg);
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Kanit;
+    
+    text-shadow: 10px 10px 80px white;
+}
+
+/* #Home {
+    height: 100vh;
+    width: 100%;
+    animation: changeBackground 15s infinite;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Kanit;
+    
+    text-shadow: 10px 10px 80px white;
+}
+
+@keyframes changeBackground {
+    0% {background-image: url(images/indianhead.jpg);}
+    25% {background-image: url(images/katahdin.jpg)}
+    50% {background-image: url(images/grand_teton.jpg)}
+    75% {background-image: url(images/indianhead.jpg)}
+    100% {background-image: url(images/yosemite_valley.jpg)}
+  } */
+
+#About {
+    height: 100vh;
+    width: 100%;
+    background-color: lightgreen;
+    margin: 10px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#About img {
+    border-radius: 100px;
+    margin: 40px;
+}
+
+.intro_box {
+    width:75rem;
+    margin: 40px;
+}
+
+#Experiences {
+    height: 100vh;
+    width: 100%;
+    background-color: lightgreen;
+    margin: 10px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+
+    height: 80%;
+    width: 80%;
+}
+
+.CRLS, .top, .AP, .Harvard {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.courses, .score {
+    display: flex;
+    flex-direction: column;
+}
+
+#Dreams{
+    height: 100vh;
+    width: 100%;
+    background-color: lightgreen;
+    margin: 10px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.dream_header {
+    margin-top: 50px;
+    margin-left: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.location {
+    width: 600px;
+    height: 200px;
+    background-color: white;
+
+    margin: 50px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.place_image {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+}
+
+.place_description {
+    width: 400px;
+    height: 200px;
+    
+    padding: 15px;
+}
+
+#Contact {
+    height: 20vh;
+    width: 100%;
+    background-color: lightgreen;
+    margin: 10px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_box {
+    padding: 20px;
+}
+
+.contact_box a {
+    text-decoration: none;
+    color: darkred;
+    font-weight: 700;
+    transition: color 0.2s;
+}
+
+.contact_box a:hover {
+    color: purple;
+    transition: color 0.2s;
+}
