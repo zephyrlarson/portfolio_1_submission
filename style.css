@@ -9,7 +9,7 @@ html {
 }
 
 
-h1 {
+/* h1 {
     font-size: 5.61rem;
 }
 
@@ -23,6 +23,34 @@ h3 {
 
 h4 {
     font-size: 2.369rem;
+} 
+    
+h5 {
+    font-size: 1.777rem;
+}
+
+h6 {
+    font-size: 1.333rem;
+}*/
+
+h1 {
+    font-size: 3.815rem;
+    font-size: clamp(3.815rem, 1.66934343434343434341rem + 5.646464646464647vw, 6.61rem);
+}
+
+h2 {
+    font-size: 3.815rem;
+    font-size: clamp(3.815rem, 3.5125353535353536rem + 0.7959595959595954vw, 4.209rem);
+}
+
+h3 {
+    font-size: 2.441rem;
+    font-size: clamp(2.441rem, 1.891343434343434rem + 1.446464646464647vw, 3.157rem);
+}
+
+h4 {
+    font-size: 1.953rem;
+    font-size: clamp(1.953rem, 1.6336464646464646rem + 0.8404040404040408vw, 2.369rem);
 }
 
 h5 {
@@ -72,14 +100,7 @@ nav a:hover {
 }
 
 .link {
-    /* width: 8rem;
-    height: 5rem;
     
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; */
-
     color: white;
     padding: 20px;
 }
@@ -137,7 +158,7 @@ main {
   } */
 
 #About {
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     background-color: #4b816f;
     margin: 10px;
@@ -160,7 +181,7 @@ main {
 }
 
 #Experiences {
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     background-color: rgb(75, 129, 111);
     margin: 10px;
@@ -191,8 +212,30 @@ main {
     flex-direction: column;
 }
 
+#skills {
+    width: 100%;
+    background-color: rgb(75, 129, 111);
+    margin: 10px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.computer {
+    margin: 30px;
+    padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #Dreams{
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     background-color: rgb(75, 129, 111);
     margin: 10px;
@@ -265,4 +308,36 @@ main {
 .contact_box a:hover {
     color: purple;
     transition: color 0.2s;
+}
+
+@media (max-width: 620px) {
+    nav {
+        height: 6rem;
+    }
+
+    .location {
+        width: 400px;
+    }
+
+    .place_description {
+        width: 200px;
+        padding: 5px;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    /* h5 {
+        font-size: 1rem;
+    } */
+    
+    .intro_box {
+        width: 25rem;
+        margin: 40px;
+    }
 }
